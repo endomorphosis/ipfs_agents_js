@@ -1,0 +1,14 @@
+__pycache__/
+build/
+*.egg-info/
+*.egg/
+config.toml
+*config.toml
+config/config.toml
+config/__pycache__/
+config/__pycache__
+__pycache__
+build/
+orbitdb/
+dist/
+node_modules/

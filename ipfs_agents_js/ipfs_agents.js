@@ -11,8 +11,8 @@ import fireproofDbKitJs from fireproofdb_kit_js
 export class ipfsAgentsJs {
     constructor(resources, metadata) {
         this.config = {}
-        this.ipfsTransformers = new ipfsTransformers(resources, metadata)
-        this.ipfsModelManager = new ipfsModelManager(resources, metadata)
+        this.ipfsModelManager = new ipfsModelManagerJs(resources, metadata)
+        this.ipfsTransformers = new ipfsTransformersJS(resources, metadata)
         this.orbitDbKit = new orbitDBKitJs(resources, metadata)
         this.ipfsDatasets = new ipfsDatasetsJs(resources, metadata)
         this.ipfsFaiss = new ipfsFaissJs(resources, metadata)

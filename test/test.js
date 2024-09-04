@@ -1,7 +1,7 @@
 import { libp2pKitJs } from 'libp2p_kit_js';
 import { ipfsKitJs } from 'ipfs_kit_js';
 import { orbitDbKitJs } from 'orbitdb_kit_js';
-import { ipfsAgents } from 'ipfs_agents_js';
+import { ipfsAgentsJs } from '../ipfs_agents_js/ipfs_agents.js';
 import { ipfsModelManagerJs } from 'ipfs_model_manager_js';
 import { ipfsTransformersJs } from 'ipfs_transformers_js';
 import { ipfsDatasetsJs } from 'ipfs_datasets_js';
@@ -19,7 +19,7 @@ export class test_ipfs_agents_js {
         this.ipfsKitJs = new ipfsKitJs();
         this.orbitDbKitJs = new orbitDbKitJs();
         this.ipfsModelManagerJs = new ipfsModelManagerJs();
-        this.ipfsAgentsJs = new ipfsAgents();
+        this.ipfsAgentsJs = new ipfsAgentsJs();
         this.ipfsTransformersJs = new ipfsTransformersJs();
         this.ipfsDatasetsJs = new ipfsDatasetsJs();
         this.config = requireConfig();

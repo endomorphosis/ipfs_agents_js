@@ -5,8 +5,8 @@ import ipfsAccelerateJS from 'ipfs_accelerate_js';
 import libp2pKitJs from 'libp2p_kit_js';
 import orbitDBKitJs from 'orbitdb_kit_js';
 import ipfsFaissJs from 'ipfs_faiss_js';
-import storachaKitJs from 'storacha_kit_js';
-import fireproofDbKitJs from 'fireproofdb_kit_js';
+// import storachaKitJs from 'storacha_kit_js';
+// import fireproofDbKitJs from 'fireproofdb_kit_js';
 
 export class ipfsAgentsJs {
     constructor(resources, metadata) {
@@ -18,9 +18,9 @@ export class ipfsAgentsJs {
         this.ipfsFaiss = new ipfsFaissJs(resources, metadata)
         this.libp2pKit = new libp2pKitJs(resources, metadata)
         this.ipfsKit = new ipfsKitJs(resources, metadata)
-        this.storachaKit = new storachaKitJs(resources, metadata)
-        this.fireproofDbKit = new fireproofDbKitJs(resources, metadata)
         this.ipfsAccelerate = new ipfsAccelerateJS(resources, metadata)
+        // this.storachaKit = new storachaKitJs(resources, metadata)
+        // this.fireproofDbKit = new fireproofDbKitJs(resources, metadata)
     }
 
     async init () {

@@ -1,12 +1,12 @@
-import ipfsModelManagerJs from ipfs_model_manager_js
-import ipfsTransformersJS from ipfs_transformers_js
-import ipfsDatasetsJs from ipfs_datasets_js
-import ipfsAccelerateJS from ipfs_accelerate_js
-import libp2pKitJs from libp2p_kit_js
-import orbitDBKitJs from orbit_db_kit_js
-import ipfsFaissJs from ipfs_faiss_js
-import storachaKitJs from storacha_kit_js
-import fireproofDbKitJs from fireproofdb_kit_js
+import ipfsModelManagerJs from 'ipfs_model_manager_js';
+import ipfsTransformersJS from 'ipfs_transformers_js';
+import ipfsDatasetsJs from 'ipfs_datasets_js';
+import ipfsAccelerateJS from 'ipfs_accelerate_js';
+import libp2pKitJs from 'libp2p_kit_js';
+import orbitDBKitJs from 'orbit_db_kit_js';
+import ipfsFaissJs from 'ipfs_faiss_js';
+import storachaKitJs from 'storacha_kit_js';
+import fireproofDbKitJs from 'fireproofdb_kit_js';
 
 export class ipfsAgentsJs {
     constructor(resources, metadata) {

@@ -1,11 +1,11 @@
-import { libp2pKitJs } from 'libp2p_kit_js';
-import { ipfsKitJs } from 'ipfs_kit_js';
-import { orbitDbKitJs } from 'orbitdb_kit_js';
-import { ipfsAgentsJs } from '../ipfs_agents_js/ipfs_agents.js';
-import { ipfsModelManagerJs } from 'ipfs_model_manager_js';
-import { ipfsTransformersJs } from 'ipfs_transformers_js';
-import { ipfsDatasetsJs } from 'ipfs_datasets_js';
-import { requireConfig } from "../config/config.js";
+// import { libp2pKitJs } from 'libp2p_kit_js';
+// import { ipfsKitJs } from 'ipfs_kit_js';
+// import { orbitDbKitJs } from 'orbitdb_kit_js';
+// import { ipfsAgentsJs } from '../ipfs_agents_js/ipfs_agents.js';
+// import { ipfsModelManagerJs } from 'ipfs_model_manager_js';
+// import { ipfsTransformersJs } from 'ipfs_transformers_js';
+// import { ipfsDatasetsJs } from 'ipfs_datasets_js';
+// import { requireConfig } from "../config/config.js";
 import path from "path";
 import fs from "fs";
 import os from "os";
@@ -15,14 +15,14 @@ import { t } from "tar";
 export class test_ipfs_agents_js {
     constructor() {
         this.imports = {};
-        this.libp2pKitJs = new libp2pKitJs();
-        this.ipfsKitJs = new ipfsKitJs();
-        this.orbitDbKitJs = new orbitDbKitJs();
-        this.ipfsModelManagerJs = new ipfsModelManagerJs();
-        this.ipfsAgentsJs = new ipfsAgentsJs();
-        this.ipfsTransformersJs = new ipfsTransformersJs();
-        this.ipfsDatasetsJs = new ipfsDatasetsJs();
-        this.config = requireConfig();
+        // this.libp2pKitJs = new libp2pKitJs();
+        // this.ipfsKitJs = new ipfsKitJs();
+        // this.orbitDbKitJs = new orbitDbKitJs();
+        // this.ipfsModelManagerJs = new ipfsModelManagerJs();
+        // this.ipfsAgentsJs = new ipfsAgentsJs();
+        // this.ipfsTransformersJs = new ipfsTransformersJs();
+        // this.ipfsDatasetsJs = new ipfsDatasetsJs();
+        // this.config = requireConfig();
     }
 
     async init(libp2p_kit_js, orbitdb_kit_js, ipfs_kit_js, ipfs_agents_js)  {
@@ -62,6 +62,7 @@ export class test_ipfs_agents_js {
         return test_results
     }
 }
+export default test_ipfs_agents_js;
 
 if (import.meta.url === 'file://' + process.argv[1]) {
     console.log("Running test");
